@@ -1,7 +1,9 @@
 from funtions import suma
 from calculo import calcula_area_cU, calcul_area_t, c_area_circu
 
+print("practica_131125")
 def mostrar_menu():
+    
     
     print("-----menu-----")
     print("1 para calcular el area de triangulo")
