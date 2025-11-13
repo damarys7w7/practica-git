@@ -1,5 +1,5 @@
 from funtions import suma
-from calculo import calcular_area_cU, calcular_area_t
+from calculo import calcula_area_cU, calcul_area_t, c_area_circu
 
 def mostrar_menu():
     
@@ -7,7 +7,8 @@ def mostrar_menu():
     print("1 para calcular el area de triangulo")
     print("2 para calcular el area del cuadrado")
     print("3 para sumar")
-    print("4 para salir")
+    print("4 para calcular el radio de un circulo")
+    print("5 para salir")
 
 while True:
     mostrar_menu()
@@ -17,14 +18,14 @@ while True:
         
         base= float(input("digite una base:"))
         altura=float(input("digite una altura:"))
-        area1= calcular_area_t(base, altura)
+        area1= calcul_area_t(base, altura)
         print(f"el area del traingulo es: {area1}")
 
 
     elif opcion == "2" :
 
         lado=float(input("digite un lado:"))    
-        area2= calcular_area_cU (lado)
+        area2= calcula_area_cU (lado)
         print(f"el area del cuadrado es: {area2}")
 
     elif opcion == "3":
@@ -34,7 +35,13 @@ while True:
         resultado = suma (num1, num2) 
         print(f"la suma es: {resultado}")
 
-    elif opcion == "4" :
+    elif opcion =="4":
+
+        radio=float (input("digite un numero"))
+        area3= c_area_circu(radio)
+        print(f"el radio es: {area3}")
+
+    elif opcion == "5" :
 
         print("hasta pronto!")
         break
